@@ -4,7 +4,7 @@ const request = require('request');
 const app = express();
 const urlencodedParser = express.urlencoded({ extended: false });
 
-postMessage(app , request , urlencodedParser);
+postMessage(app , request , urlencodedParser , process.env.SLACK_URL);
 
 const PORT = 3000 || process.env.PORT;
 

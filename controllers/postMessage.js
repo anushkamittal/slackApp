@@ -1,6 +1,6 @@
-module.exports = function(app , request , urlencodedParser) {
+module.exports = function(app , request , urlencodedParser , url) {
     request.post({
-        url: "https://hooks.slack.com/services/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",
+        url: url,
         json: true,
         body: {
             "text": "Hello! This is Slack-Node-App"
